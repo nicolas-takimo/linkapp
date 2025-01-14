@@ -27,7 +27,7 @@
                 browser = this.matchItem(agent, this.databrowser);
 
             // Verifica o sistema operacional e redireciona para a loja apropriada
-            this.redirectToStore(os.name);
+            //this.redirectToStore(os.name);
 
             return { os: os, browser: browser };
         },
@@ -49,7 +49,7 @@
             }
             return { name: 'unknown', version: 0 };
         },
-        redirectToStore: function (osName) {
+        /* redirectToStore: function (osName) {
             var playStoreLink = 'https://play.google.com/store/apps/details?id=seu_app_id';
             var appStoreLink = 'https://apps.apple.com/us/app/seu-app-id';
 
@@ -60,8 +60,9 @@
             } else {
                 console.log('Sistema operacional não suportado para redirecionamento automático.');
             }
-        }
+        }*/
     };
+    
 
     var e = module.init();
     var debug = '';
